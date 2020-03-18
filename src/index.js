@@ -1,13 +1,13 @@
 
-import { createButton, createPara, addButtonEventListner } from './dateDisplayLibrary'
+import { createButton, createPara } from './dateDisplayLibrary'
 
 import renderDate, { renderDay } from './displayDate'
 
 function renderApp(fun) {
-    var buttonDate = createButton('Display Date');   
-    var buttonDay = createButton('Display Day');
-    createPara();
-    addButtonEventListner(buttonDate, renderDate);
-    addButtonEventListner(buttonDay, renderDay);
+    var addButtonDateEventListner = createButton('Display Date');
+    addButtonDateEventListner(renderDate);
+    var addButtonDayEventListner = createButton('Display Day');
+    addButtonDayEventListner(renderDay);
+    createPara();  
 }
 renderApp();

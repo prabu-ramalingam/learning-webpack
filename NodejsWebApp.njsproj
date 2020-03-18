@@ -29,6 +29,7 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include=".gitignore" />
     <Content Include="src\date.js" />
     <Content Include="src\dateDisplayLibrary.js" />
     <Content Include="src\displayDate.js" />
