@@ -10,7 +10,7 @@ function createButton(buttonName) {
     button.appendChild(buttonText);
     body.appendChild(button);
 
-    
+    // function with clousure..
     return function (listener) {
 
         button.addEventListener('click', () => listener(para));
